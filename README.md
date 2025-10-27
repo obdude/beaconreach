@@ -5,7 +5,7 @@
   <p align="center">
     <strong>The Open-Source Outbound Workflow Engine.</strong>
     <br />
-    <em class="text-gray-500">Like Zapier or Clay - but open, transparent, and 100% yours.</em>
+    <em class="text-gray-500">Free, Fast, Transparent</em>
   </p>
 </div>
 
