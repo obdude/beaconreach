@@ -13,7 +13,6 @@
   <a href="#"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
   <a href="#"><img src="https://img.shields.io/badge/Python-3.14+-brightgreen.svg" alt="Python Version"></a>
   <a href="#"><img src="https://img.shields.io/badge/Framework-Streamlit-red.svg" alt="Streamlit"></a>
-  <a href="https://github.com/obdude/beaconreach"><img src="https://img.shields.io/github/stars/obdude/beaconreach?style=social" alt="GitHub Stars"></a>
 </p>
 
 ---
