@@ -19,7 +19,7 @@
 
 ### 🚀 What is Beaconreach?
 
-Beaconreach helps you **automate your outreach** - without the vendor lock-in, the hidden logic, or the monthly bills. It's a full-stack solution to the core problem of starting meaningful, value-first conversations.
+Beaconreach helps you **automate your value-first outreach** - without the vendor lock-in, the hidden logic, or the monthly bills. It's a full-stack solution to the core problem of starting meaningful, value-first conversations.
 
 If you can describe your outreach process in steps, you can build it with Beaconreach. Each step - sourcing leads, enriching data, or acting on it - is a simple, independent **module**. You stay in control, you own your data, and you decide exactly how your workflows run.
 
