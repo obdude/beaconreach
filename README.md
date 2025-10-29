@@ -1,6 +1,6 @@
 <br/>
 <div align="center">
-  <img src="[URL_TO_YOUR_LOGO_OR_BANNER_IMAGE]" alt="Beaconreach Banner" width="500">
+  <img src="assets/beaconreach.svg" alt="Beaconreach Banner" width="500">
   <h1 align="center">Stop Cold Outreach. Start Warm Connections.</h1>
   <p align="center">
     <strong>Beaconreach is your free, open-source assistant for connecting with people in a more human way.</strong>
