@@ -1,9 +1,25 @@
+<div align="center">
+  <img src="assets/beaconreach.svg" alt="BeaconReach Logo" width="200" height="auto" />
+  <h1>BeaconReach</h1>
+  <p>
+    <strong>The Open Source Standard for Value-Based GTM Automation</strong>
+  </p>
+  
+  <!-- Badges (Optional but recommended) -->
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg" alt="License: CC0-1.0">
+  </a>
+  <a href="https://beaconreach.org">
+    <img src="https://img.shields.io/badge/Website-beaconreach.org-blue.svg" alt="Website">
+  </a>
+</div>
+
+<br />
+
 ## BeaconReach v0.1: Open Source GTM Standard
 
 **The Ethical, Asset-Based Outreach Protocol.**  
 *Stop renting your pipeline. Own your graph.*
-
-[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
 
 ### 🛑 The Problem
 
