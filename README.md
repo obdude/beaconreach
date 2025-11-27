@@ -1,4 +1,4 @@
-# BeaconReach v0.1: Open Source GTM Standard
+## BeaconReach v0.1: Open Source GTM Standard
 
 **The Ethical, Asset-Based Outreach Protocol.**  
 *Stop renting your pipeline. Own your graph.*
