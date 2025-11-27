@@ -1,9 +1,5 @@
 # The Zen of BeaconReach (Value-Based ABM Outreach)
 
-**Protocol Version:** 0.1  
-**Status:** Open Standard  
-**License:** CC0 / Public Domain  
-
 1.  **Value First.** Every interaction must deliver a standalone asset or insight (actionable benefit).
 2.  **Clarity over Cleverness.** Be simple, direct, honest.
 3.  **Assets over Asks.** Don't ask for time. Give a resource.
@@ -28,3 +24,9 @@
 4. **Tool-agnostic**: Implementable manually or with automation.
 5. **Measurable**: Track, analyze, improve continuously.
 6. **Transparent evolution**: Open for community improvements.
+
+---
+
+**Protocol Version:** 0.1  
+**Status:** Open Standard  
+**License:** CC0 / Public Domain  
