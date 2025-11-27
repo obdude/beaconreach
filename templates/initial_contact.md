@@ -1,3 +1,5 @@
+Subject: A resource for {{ company }}
+
 Hi {{name}},
 
 I came across a resource that might help with {{pain_point}} at {{company}}:
