@@ -41,6 +41,17 @@ BeaconReach is **"Headless GTM"**. It decouples your logic from the data provide
 
 ---
 
+### Features
+
+- Zen-inspired ethical outreach principles
+- Contact management via CSV/JSON
+- Modular message and asset templates
+- Optional AI personalization
+- Tool-agnostic, vendor-free, open standard
+- ABM-focused and scalable
+
+---
+
 ### 🆚 The Stack Comparison
 
 | Feature | Proprietary SaaS | BeaconReach (Open Source) |
