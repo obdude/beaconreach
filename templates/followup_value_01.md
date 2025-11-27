@@ -1,3 +1,5 @@
+Subject: Useful resource for {{ company }}
+
 Hi {{name}},
 
 Following up on my previous message - I thought you might also find this useful:  
