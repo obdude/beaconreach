@@ -2,78 +2,82 @@
   <img src="assets/beaconreach.svg" alt="BeaconReach Logo" width="200" height="auto" />
   <h1>BeaconReach</h1>
   <p>
-    <strong>The Open Source Standard for Value-Based GTM Automation</strong>
+    <strong>The Open Source GTM Automation Infrastructure</strong>
   </p>
   
-  <!-- Badges (Optional but recommended) -->
-  <a href="LICENSE">
-    <img src="https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg" alt="License: CC0-1.0">
-  </a>
-  <a href="https://beaconreach.org">
-    <img src="https://img.shields.io/badge/Website-beaconreach.org-blue.svg" alt="Website">
-  </a>
+  <p>
+    <a href="LICENSE">
+      <img src="https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg" alt="License: CC0-1.0">
+    </a>
+    <a href="https://beaconreach.org">
+      <img src="https://img.shields.io/badge/Website-beaconreach.org-blue.svg" alt="Website">
+    </a>
+    <a href="#">
+      <img src="https://img.shields.io/badge/Status-Active_Beta-success.svg" alt="Status">
+    </a>
+  </p>
 </div>
 
 <br />
 
-## BeaconReach v0.1: Open Source GTM Standard
+### ⚡ Build high-performance outreach pipelines. 100% Code. 0% Credit Markup.
 
-**The Ethical, Asset-Based Outreach Protocol.**  
-*Stop renting your pipeline. Own your graph.*
+**BeaconReach** is the open standard for GTM Engineering. It replaces expensive, black-box SaaS tools with a transparent, local-first automation layer.
 
-### 🛑 The Problem
+---
 
-Modern, proprietary GTM tools (like Clay, Apollo, etc.) are powerful, but they trap you in **Vendor Lock-in** and **Credit-Based Pricing**. You pay a markup on data, you don't own your workflows, and when you stop paying, your "brain" disappears.
+### 🛑 The Problem: The "Growth Tax"
+Modern GTM tools (like Clay, Apollo, etc.) are incredible, but they trap you in **Vendor Lock-in** and **Credit-Based Pricing**. 
+- You pay a **10x-50x markup** on data enrichment (API calls).
+- Your business logic is locked inside a proprietary UI.
+- When you stop paying, your "brain" disappears.
 
-### 💡 The BeaconReach Solution
+### 💡 The Solution: Open Infrastructure
+BeaconReach is **"Headless GTM"**. It decouples your logic from the data provider.
 
-BeaconReach is an open-source standard for **High-Personalization, Value-First Outreach**. It is not a SaaS. It is a framework.
+1.  **Bring Your Own Keys (BYOK):** Connect directly to OpenAI, Perplexity, Google, or Clearbit. Pay cost price. No middleman markup.
+2.  **Infrastructure as Code:** Version control your outreach strategies. Treat your GTM pipeline like software, not a messy Zapier web.
+3.  **Data Sovereignty:** Your contact graph lives in local JSON/CSV. You own the data layer.
 
-1.  **Zero Credit Markup:** Use your own API keys (OpenAI, Perplexity, Google). Pay cost price.
-2.  **Infrastructure-as-Code:** Version control your outreach strategies.
-3.  **Ethical by Design:** Built on the "Value-First" protocol. No spam.
-4.  **Dual-Mode:** Accessible for spreadsheets (Beginners) and Python/Pandas (Engineers).
+---
+
+### 🆚 The Stack Comparison
+
+| Feature | Proprietary SaaS | BeaconReach (Open Source) |
+| :--- | :--- | :--- |
+| **Business Logic** | Locked in UI / "Click-Ops" | Open Python / Standardized Config |
+| **Enrichment Cost** | High Markup ("Credits") | **Cost Price** (Direct API) |
+| **Data Ownership** | Rented (Disappears on churn) | **100% Owned** (Local / Git) |
+| **Extensibility** | Limited to native integrations | Infinite (It's just code) |
 
 ---
 
 ### 🚀 Getting Started
 
-#### Path A: The Human (Beginner / Manual)
+BeaconReach is designed for two types of users:
 
-*For founders, consultants, and those who want to keep it simple.*
+#### 1. The Operator Path (No-Code)
+*For founders, growth marketers, and non-technical teams.*
+Run structured, high-value campaigns using our **Smart Spreadsheets** and **Markdown Templates**. No Python required.
+👉 **[Read the Beginner Guide](docs/beginner_guide.md)**
 
-👉 **[Read the Beginner Guide](guides/BEGINNER_START.md)**
-1. Edit `data/contacts_master.csv` in Excel/Sheets.
-2. Select a template from `templates/`.
-3. Send manually, log the result.
-
-#### Path B: The Engineer (Advanced / Automated)
-
-*For Clay refugees, GTM Engineers, and Ops teams.*
-
-👉 **[Read the Advanced Guide](guides/ADVANCED_GTM.md)**
-1. Define your asset logic in `library/asset_manifest.json`.
-2. Configure your API keys in `.env`.
-3. Run the engine:
-   ```bash
-   python workflows/core_engine.py --enrich --generate
-   ```
+#### 2. The Engineer Path (Code)
+*For GTM Engineers, Clay Power Users, and Ops.*
+Deploy the Python `core_engine` to orchestrate data enrichment, generate dynamic messaging, and manage your contact graph programmatically.
+👉 **[Read the Advanced Docs](docs/advanced_guide.md)**
 
 ---
 
-### 🧠 The Philosophy
+### 🧠 The Philosophy: "Zen of Outreach"
+We believe outreach should be high-signal and value-first. Spam is a failure of engineering.
+> *See [BEACONREACH.md](BEACONREACH.md) for the full protocol.*
 
-We believe in the **Zen of Outreach** (see [BEACONREACH.md](BEACONREACH.md)).
-
-> "Value is the only currency. If you aren't depositing, you can't withdraw."
-
-**[BeaconReach.org](https://beaconreach.org)**
+1.  **Value First:** Every interaction must deliver a standalone asset or insight.
+2.  **Schema over Chaos:** Relationships are data. Structure them.
+3.  **Automate the Process, Not the Human:** Use code to gather context, use humans to verify empathy.
 
 ---
 
-## License
-
-This project is dedicated to the public domain under the **CC0 1.0 Universal** license.  
-You are free to copy, modify, distribute, and perform the work, even for commercial purposes, all without asking permission.
-
-While not required, we appreciate a link back to [BeaconReach.org](https://beaconreach.org) so others can find the standard.
+<div align="center">
+  <sub>Managed by the <a href="https://beaconreach.org">BeaconReach Community</a>. Released under CC0.</sub>
+</div>
