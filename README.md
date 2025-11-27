@@ -79,6 +79,38 @@ Import the `core_engine` to programmatically orchestrate complex data pipelines,
 
 ---
 
+### 🛠️ Smart Waterfall Configuration
+Define complex enrichment logic in a simple `pipeline.yaml` file. If the first provider fails, the engine automatically tries the next one - saving you money.
+
+```yaml
+# pipeline.yaml
+campaign_name: "SaaS Founders Outreach"
+input_source: "data/raw_domains.csv"
+
+enrichment_waterfall:
+  - field: "work_email"
+    providers:
+      # 1. Try Apollo first (High accuracy)
+      - name: "apollo_api"
+        api_key: ${APOLLO_KEY}
+        
+      # 2. If Apollo returns null, try Prospeo (Better for EU data)
+      - name: "prospeo_api"
+        condition: "if_previous_failed"
+        
+      # 3. If both fail, use AI to predict and validate
+      - name: "openai_predict"
+        model: "gpt-4o-mini"
+        condition: "if_previous_failed"
+        cost_limit: 0.05 # Stop if cost exceeds 5 cents/row
+
+output:
+  format: "csv"
+  path: "data/ready_to_send.csv"
+```
+
+---
+
 ### 🧠 The Philosophy: High-Signal Engineering
 We reject "Spray and Pray." We believe in precision at scale.
 > *See [BEACONREACH.md](BEACONREACH.md) for the full protocol.*
