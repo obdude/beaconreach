@@ -1,7 +1,7 @@
 # The Zen of BeaconReach (Value-Based ABM Outreach)
 
 **Protocol Version:** 0.1  
-**Status:** Open Standard
+**Status:** Open Standard  
 **License:** CC0 / Public Domain  
 
 1.  **Value First.** Every interaction must deliver a standalone asset or insight (actionable benefit).
