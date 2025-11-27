@@ -58,7 +58,7 @@ BeaconReach decouples your logic from the data provider. It allows you to build 
 | :--- | :--- | :--- |
 | **Enrichment Cost** | High Markup ("Credits") | **Cost Price** (Direct API) |
 | **Scale Limit** | ~20k rows (Browser Crash) | **Unlimited** (Hardware Limit) |
-| **Logic** | Locked in UI / "Click-Ops" | Version Controlled Config/Code |
+| **Logic** | Locked in UI / "Click-Ops" | **Portable** and Version Controlled Config/Code |
 | **Data Ownership** | Rented (Disappears on churn) | **100% Owned** (Local / Git) |
 
 ---
