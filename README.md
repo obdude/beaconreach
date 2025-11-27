@@ -5,8 +5,6 @@
 
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
 
----
-
 ### 🛑 The Problem
 
 Modern, proprietary GTM tools (like Clay, Apollo, etc.) are powerful, but they trap you in **Vendor Lock-in** and **Credit-Based Pricing**. You pay a markup on data, you don't own your workflows, and when you stop paying, your "brain" disappears.
@@ -54,3 +52,12 @@ We believe in the **Zen of Outreach** (see [BEACONREACH.md](BEACONREACH.md)).
 > "Value is the only currency. If you aren't depositing, you can't withdraw."
 
 **[BeaconReach.org](https://beaconreach.org)**
+
+---
+
+## License
+
+This project is dedicated to the public domain under the **CC0 1.0 Universal** license.  
+You are free to copy, modify, distribute, and perform the work, even for commercial purposes, all without asking permission.
+
+While not required, we appreciate a link back to [BeaconReach.org](https://beaconreach.org) so others can find the standard.
