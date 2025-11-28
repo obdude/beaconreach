@@ -2,7 +2,7 @@
   <img src="assets/beaconreach.svg" alt="BeaconReach Logo" width="200" height="auto" />
   <h1>BeaconReach</h1>
   <p>
-    <strong>The Headless Enrichment & GTM Engine</strong>
+    <strong>The Open Protocol for GTM Engineering</strong>
     <br />
     <strong><i>GTM-as-Code</i></strong>
   </p>
@@ -15,96 +15,72 @@
       <img src="https://img.shields.io/badge/Website-beaconreach.org-blue.svg" alt="Website">
     </a>
     <a href="#">
-      <img src="https://img.shields.io/badge/Status-Active_Beta-success.svg" alt="Status">
+      <img src="https://img.shields.io/badge/Registry-Available-success.svg" alt="Registry">
     </a>
   </p>
 </div>
 
 <br />
 
-### ⚡ Build enrichment waterfalls at cost price. 0% Markup. Unlimited Scale.
+### ⚡ The Terraform for Growth. 0% Markup. Unlimited Scale.
 
-**BeaconReach** is the open infrastructure for GTM Engineering. It replaces expensive "Spreadsheet SaaS" credit models with a transparent, local-first automation layer.
+**BeaconReach** is the standard definition language for Growth. It replaces expensive "Spreadsheet SaaS" credit models with a transparent, local-first automation protocol. 
 
----
-
-### 🛑 The Problem: The "Credit Arbitrage"
-Modern enrichment tools are powerful, but they operate on a **Credit Arbitrage** business model.
-- You pay a **10x-50x markup** on data (reselling you standard API calls as "Credits").
-- **Waterfall Logic** is expensive to run and locked inside a proprietary UI.
-- **Scale Limits:** Browsers crash after 20k rows; you can't process your Total Addressable Market (TAM) in one go.
-
-### 💡 The Solution: Headless GTM
-BeaconReach decouples your logic from the data provider. It allows you to build sophisticated enrichment waterfalls locally.
-
-1.  **Bring Your Own Keys (BYOK):** Connect directly to OpenAI, Perplexity, Google, Prospeo, or Clearbit. Pay the raw API cost. No middleman markup.
-2.  **Enrichment Waterfalls:** Chain providers (e.g., *Check Apollo -> if null, check Hunter -> if null, predict with AI*) using simple config or Python.
-3.  **Unlimited Scale:** Process 1M+ rows locally. No browser memory leaks. No "per-seat" pricing.
-4.  **Infrastructure as Code:** Version control your outreach strategies. Treat your GTM pipeline like software, not a messy web of Zaps.
+It allows you to treat your Go-To-Market strategy like software: **Version controlled, testable, and priced at wholesale cost.**
 
 ---
 
-### Features
+### 🛑 The Problem: "Credit Arbitrage" & Logic Lock-in
+Modern enrichment tools are powerful, but they are built on two flawed models:
 
-- **Smart Waterfalls:** Cascading enrichment logic to maximize coverage and minimize cost.
-- **Local Data Sovereignty:** Your contact graph lives in local JSON/CSV.
-- **Portable Logic:** Run the same engine on your laptop or a headless server.
-- **Template Engine:** Modular message generation using standard logic (Jinja2/Liquid style).
-- **Tool Agnostic:** Swap data providers in one line of config.
+1.  **Credit Arbitrage:** You pay a **10x-50x markup** on data. Vendors resell you standard API calls (OpenAI, Apollo, Google) disguised as "Credits."
+2.  **Logic Lock-in:** Your complex waterfall logic is trapped inside a proprietary SaaS UI. You cannot version control it, you cannot diff it, and if you stop paying, you lose your intellectual property.
+3.  **The Browser Ceiling:** SaaS tools crash after ~20k rows. You cannot process your Total Addressable Market (TAM) in one go without breaking the browser.
 
----
+### 💡 The Solution: The BeaconReach Protocol
+BeaconReach decouples your **Logic** from the **Vendor**.
 
-### 🆚 The Stack Comparison
-
-| Feature | Spreadsheet-based SaaS | BeaconReach (Open Source) |
-| :--- | :--- | :--- |
-| **Enrichment Cost** | High Markup ("Credits") | **Cost Price** (Direct API) |
-| **Scale Limit** | ~20k rows (Browser Crash) | **Unlimited** (Hardware Limit) |
-| **Logic** | Locked in UI / "Click-Ops" | **Portable** and Version Controlled Config/Code |
-| **Data Ownership** | Rented (Disappears on churn) | **100% Owned** (Local / Git) |
+1.  **Define in YAML:** Write your enrichment logic in a declarative `pipeline.yaml` file. "GTM-as-Code."
+2.  **Bring Your Own Keys (BYOK):** Connect directly to Apollo, OpenAI, Perplexity, or any HTTP endpoint. **Pay the raw API cost ($0.002) not the Credit cost ($0.50).**
+3.  **Unlimited Scale:** The engine runs on your metal (Laptop, Docker, Server). Process 1M+ rows without memory leaks.
+4.  **The Registry:** Don't build from scratch. Pull community-verified waterfall strategies (e.g., `beaconreach pull community/local-business-scraper`) and run them instantly.
 
 ---
 
-### 🚀 Getting Started
-
-BeaconReach is designed for two types of workflows:
-
-#### 1. The Config Path (Low-Code)
-*For Operations and Growth leads.*
-Define your enrichment waterfalls and messaging logic using simple **YAML/JSON Configurations** and standard spreadsheets. No complex Python scripting required—just define the rules and run the engine.
-👉 **[Read the Config Guide](docs/beginner_guide.md)**
-
-#### 2. The Engineer Path (Code)
-*For GTM Engineers and Python Power Users.*
-Import the `core_engine` to programmatically orchestrate complex data pipelines, custom scrapers, and dynamic graph management.
-👉 **[Read the Advanced Docs](docs/advanced_guide.md)**
-
----
-
-### 🛠️ Smart Waterfall Configuration
-Define complex enrichment logic in a simple `pipeline.yaml` file. If the first provider fails, the engine automatically tries the next one - saving you money.
+### 🛠️ The Standard: `pipeline.yaml`
+BeaconReach uses a standardized syntax to define "Smart Waterfalls." If one provider fails, the engine intelligently falls back to the next, saving you money on every row.
 
 ```yaml
 # pipeline.yaml
-campaign_name: "SaaS Founders Outreach"
-input_source: "data/raw_domains.csv"
+name: "Enterprise Founders Outreach v2"
+version: "1.0.0"
 
-enrichment_waterfall:
+input: 
+  source: "data/raw_domains.csv"
+
+# The Registry allows you to pull community-verified logic
+# import: "beaconreach/waterfalls/b2b-founder-enrichment@latest"
+
+waterfall:
   - field: "work_email"
-    providers:
-      # 1. Try Apollo first (High accuracy)
-      - name: "apollo_api"
+    strategies:
+      # 1. Precise API Call (Cost: ~$0.01)
+      - provider: "apollo_api"
         api_key: ${APOLLO_KEY}
+        params:
+          reveal_personal_emails: false
         
-      # 2. If Apollo returns null, try Prospeo (Better for EU data)
-      - name: "prospeo_api"
+      # 2. Fallback Scrape (Cost: ~$0.005)
+      - provider: "prospeo_api"
         condition: "if_previous_failed"
         
-      # 3. If both fail, use AI to predict and validate
-      - name: "openai_predict"
-        model: "gpt-4o-mini"
+      # 3. AI Inference (Cost: ~$0.03)
+      # Only runs if previous steps failed. Prevents waste.
+      - provider: "openai_reasoning"
+        model: "gpt-4o"
+        prompt: "templates/email_guesser.j2"
         condition: "if_previous_failed"
-        cost_limit: 0.05 # Stop if cost exceeds 5 cents/row
+        validation: "verify_smtp" 
 
 output:
   format: "csv"
@@ -113,9 +89,44 @@ output:
 
 ---
 
+### 📦 The Toolkit
+
+BeaconReach is designed for the **GTM Engineer**—the new breed of growth marketer who demands precision and control.
+
+#### 1. The Pre-Flight Estimator
+Never guess your spend. The CLI analyzes your pipeline and calculates the exact API cost before execution.
+
+```bash
+beaconreach estimate --input 5000_rows.csv
+> Estimated Run Cost: $14.20
+> SaaS Equivalent Cost: $450.00
+> Potential Savings: 96%
+```
+
+#### 2. The Registry
+Access the open-source library of enrichment strategies.
+👉 **[Browse the Registry](docs/registry.md)**
+
+#### 3. The Engine (Python SDK)
+Import the core engine into your own Python scripts or FastAPI backends to build custom internal tools.
+👉 **[SDK Documentation](docs/sdk_guide.md)**
+
+---
+
+### 🆚 Philosophy: App vs. Protocol
+
+| Feature | The "App" Model (Clay, Spreadsheets) | The "Protocol" Model (BeaconReach) |
+| :--- | :--- | :--- |
+| **Enrichment Cost** | High Markup ("Credits") | **Cost Price** (Direct Wholesale API) |
+| **Logic Storage** | Trapped in SaaS Database | **Git / Version Control** |
+| **Scale Limit** | ~20k rows (Browser Crash) | **Unlimited** (Hardware Limit) |
+| **Collaboration** | Share Workspace Login | **Pull Requests & Code Review** |
+| **Extensibility** | Wait for Vendor Integration | **Generic HTTP / Python Scripting** |
+
+---
+
 ### 🧠 The Philosophy: High-Signal Engineering
 We reject "Spray and Pray." We believe in precision at scale.
-> *See [BEACONREACH.md](BEACONREACH.md) for the full protocol.*
 
 1.  **Precision > Volume:** Use code to gather context so you can send fewer, better messages.
 2.  **Schema over Chaos:** Relationships are data. Structure them properly (JSON) before flattening them for sending (CSV).
