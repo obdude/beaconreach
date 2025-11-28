@@ -93,7 +93,7 @@ output:
 
 ### 📦 The Toolkit
 
-BeaconReach is designed for the **GTM Engineer**—the new breed of growth marketer who demands precision and control.
+BeaconReach is designed for the **GTM Engineer** - the new breed of growth marketer who demands precision and control.
 
 #### 1. The Pre-Flight Estimator
 Never guess your spend. The CLI analyzes your pipeline and calculates the exact API cost before execution.
