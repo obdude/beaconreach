@@ -3,6 +3,8 @@
   <h1>BeaconReach</h1>
   <p>
     <strong>The Headless Enrichment & GTM Engine</strong>
+    <br />
+    <strong><i>GTM-as-Code</i></strong>
   </p>
   
   <p>
