@@ -14,9 +14,11 @@
     <a href="https://beaconreach.org">
       <img src="https://img.shields.io/badge/Website-beaconreach.org-blue.svg" alt="Website">
     </a>
+    <!--
     <a href="#">
       <img src="https://img.shields.io/badge/Registry-Available-success.svg" alt="Registry">
     </a>
+    -->
   </p>
 </div>
 
